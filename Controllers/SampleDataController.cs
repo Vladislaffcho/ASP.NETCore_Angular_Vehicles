@@ -1,10 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ASP_NET_Core_Angular_4.Controllers
+namespace Vehicles.Controllers
 {
     [Route("api/[controller]")]
     public class SampleDataController : Controller
