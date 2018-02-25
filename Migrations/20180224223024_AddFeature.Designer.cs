@@ -11,8 +11,8 @@ using System;
 namespace Vehicles.Migrations
 {
     [DbContext(typeof(VehiclesDbContext))]
-    [Migration("20171216165747_SeedDatabase")]
-    partial class SeedDatabase
+    [Migration("20180224223024_AddFeature")]
+    partial class AddFeature
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -20,6 +20,20 @@ namespace Vehicles.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "2.0.1-rtm-125")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+            modelBuilder.Entity("Vehicles.Models.Feature", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(255);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Features");
+                });
 
             modelBuilder.Entity("Vehicles.Models.Make", b =>
                 {

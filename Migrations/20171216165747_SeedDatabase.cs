@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace ASP.NET_Core_Angular_4.Migrations
+namespace Vehicles.Migrations
 {
     public partial class SeedDatabase : Migration
     {

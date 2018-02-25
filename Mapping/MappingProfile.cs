@@ -1,8 +1,8 @@
-using ASP.NET_Core_Angular_4.Controllers.Resources;
-using ASP.NET_Core_Angular_4.Models;
+using Vehicles.Controllers.Resources;
+using Vehicles.Models;
 using AutoMapper;
 
-namespace ASP.NET_Core_Angular_4.Mapping
+namespace Vehicles.Mapping
 {
     public class MappingProfile : Profile
     {
@@ -10,6 +10,7 @@ namespace ASP.NET_Core_Angular_4.Mapping
         {
             CreateMap<Make, MakeResource>();
             CreateMap<Model, ModelResource>();
+            CreateMap<Feature, FeatureResource>();
         }
     }
 }

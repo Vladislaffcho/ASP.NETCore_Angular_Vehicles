@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace ASP.NET_Core_Angular_4.Models
+namespace Vehicles.Models
 {
     public class Make
     {

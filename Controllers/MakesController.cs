@@ -1,19 +1,19 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using ASP.NET_Core_Angular_4.Controllers.Resources;
-using ASP.NET_Core_Angular_4.Models;
-using ASP.NET_Core_Angular_4.Persistence;
+using Vehicles.Controllers.Resources;
+using Vehicles.Models;
+using Vehicles.Persistence;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace ASP.NET_Core_Angular_4.Controllers
+namespace Vehicles.Controllers
 {
     public class MakesController : Controller
     {
-        private readonly CoreAngularDbContext context;
+        private readonly VehiclesDbContext context;
         private readonly IMapper mapper;
-        public MakesController(CoreAngularDbContext context, IMapper mapper)
+        public MakesController(VehiclesDbContext context, IMapper mapper)
 
         {
             this.mapper = mapper;

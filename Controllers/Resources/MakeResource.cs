@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace ASP.NET_Core_Angular_4.Controllers.Resources
+namespace Vehicles.Controllers.Resources
 {
     public class MakeResource
     {

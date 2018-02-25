@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ASP.NET_Core_Angular_4.Persistence;
+using Vehicles.Persistence;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -26,7 +26,7 @@ namespace ASP_NET_Core_Angular_4
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddAutoMapper();
-            services.AddDbContext<CoreAngularDbContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:Default"]));
+            services.AddDbContext<VehiclesDbContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:Default"]));
             services.AddMvc();
         }
 
