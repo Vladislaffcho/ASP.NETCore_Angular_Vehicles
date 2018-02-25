@@ -11,9 +11,10 @@ using Vehicles.Persistence;
 namespace Vehicles.Migrations
 {
     [DbContext(typeof(VehiclesDbContext))]
-    partial class CoreAngularDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180225211039_AddVehicle")]
+    partial class AddVehicle
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
