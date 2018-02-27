@@ -1,6 +1,5 @@
 using Vehicles.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace Vehicles.Persistence
 {
@@ -12,8 +11,7 @@ namespace Vehicles.Persistence
 
         public DbSet<Vehicle> Vehicles { get; set; }
         public DbSet<Make> Makes { get; set; }
-        
-
+        public DbSet<Model> Models { get; set; }
         public DbSet<Feature> Features { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
