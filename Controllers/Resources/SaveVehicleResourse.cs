@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace Vehicles.Controllers.Resources
 {
-    public class VehicleResource
+    public class SaveVehicleResourse
     {
         public int Id { get; set; }
         public int ModelId { get; set; }
@@ -14,7 +14,7 @@ namespace Vehicles.Controllers.Resources
         public ContactResource Contact { get; set; }
         public ICollection<int> Features { get; set; }
 
-        public VehicleResource() {
+        public SaveVehicleResourse() {
             Features = new Collection<int>();
         }
     }
