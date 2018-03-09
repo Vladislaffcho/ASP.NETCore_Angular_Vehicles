@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace Vehicles.Persistence
+namespace Vehicles.Core
 {
     public interface IUnitOfWork
     {

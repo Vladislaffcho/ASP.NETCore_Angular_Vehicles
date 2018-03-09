@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace Vehicles.Models
+namespace Vehicles.Core.Models
 {
     public class Make
     {
